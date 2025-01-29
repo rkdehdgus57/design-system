@@ -1,0 +1,24 @@
+{
+  "name": "@fastcampus/themes",
+  "type": "module",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./themes.css": "./dist/themes.css"
+  },
+  "scripts": {
+    "build": "npm run build:js && npm run build:type && npm run build:css",
+    "build:js": "node build.js",
+    "build:css": "node ./scripts/build-css-modules.js",
+    "build:type": "tsc --emitDeclarationOnly"
+  },
+  "devDependencies": {
+    "esbuild": "^0.16.17",
+    "typescript": "^5.2.2"
+  }
+}
