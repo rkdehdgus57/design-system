@@ -12,13 +12,13 @@
     "./themes.css": "./dist/themes.css"
   },
   "scripts": {
+    "tsc": "tsc",
     "build": "yarn build:js && yarn build:type && yarn build:css",
     "build:js": "node build.js",
-    "build:css": "node ./scripts/build-css-modules.js",
-    "build:type": "yarn tsc --emitDeclarationOnly"
+    "build:type": "yarn tsc --emitDeclarationOnly",
+    "build:css": "node ./scripts/build-css-modules.js"
   },
   "devDependencies": {
-    "esbuild": "^0.16.17",
-    "typescript": "^5.2.2"
+    "esbuild": "^0.16.17"
   }
 }
