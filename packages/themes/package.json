@@ -19,6 +19,6 @@
     "build:css": "node ./scripts/build-css-modules.js"
   },
   "devDependencies": {
-    "esbuild": "^0.16.17"
+    "@fastcampus/esbuild-config": "workspace:^"
   }
 }
